@@ -8,11 +8,11 @@ const productRouter = require('./routes/product');
 const userRouter = require('./routes/user');
 
 //INIT
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB = "mongodb+srv://briandsmth:forflutter@cluster0.1yqnlxj.mongodb.net/?retryWrites=true&w=majority";
 
-app.listen(PORT, ()=> {
+app.listen(PORT, "0.0.0.0" , ()=> {
   console.log(`connected port ${PORT}`)
 })
 
