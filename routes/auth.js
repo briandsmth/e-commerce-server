@@ -8,7 +8,7 @@ const authRouter = express.Router();
 
 
 //SIGN UP
-authRouter.post('/api/signup', async function (req, res) {
+authRouter.post('api/signup', async function (req, res) {
   try {
     const { name, email, password } = req.body;
 
